@@ -11,15 +11,19 @@ export default class Main extends React.Component {
     constructor () {
         super();
         this.state = {
-            albums:fakeAlbums,
-            greeting: 'Sup'};
+            
+            greeting: 'Sup'
+        };
+        this.props = {
+            
+        }
     }
 
     render () {
         return (
             <div id="main" className="container-fluid">
-                <h1>Hello World! 99</h1>
-                <h1>{this.state.albums[0].name}</h1>
+                <h1>Hello World </h1>
+                
                 <Sidebar />
                 <Albums />
                         
